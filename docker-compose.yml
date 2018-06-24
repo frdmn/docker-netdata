@@ -2,6 +2,7 @@ version: '2'
 
 services:
   netdata:
+    restart: always
     image: titpetric/netdata:${NETDATA_IMAGEVERSION}
     cap_add:
     - SYS_PTRACE
