@@ -10,6 +10,7 @@ services:
     - "${NETDATA_PORT}:19999"
     volumes:
     - ./data/override:/etc/netdata/override
+    - ./data/cache:/var/cache/netdata
     - /proc:/host/proc:ro
     - /sys:/host/sys:ro
     environment:

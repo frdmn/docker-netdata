@@ -1,2 +1,4 @@
 data/override/*
 !data/override/.gitkeep
+data/cache/*
+!data/cache/.gitkeep
