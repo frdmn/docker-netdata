@@ -9,6 +9,7 @@ services:
     ports:
     - "${NETDATA_PORT}:19999"
     volumes:
+    - ./data/override:/etc/netdata/override
     - /proc:/host/proc:ro
     - /sys:/host/sys:ro
     environment:
